@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Тестовая страница</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f9;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  p {
+    color: #666;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<h1>Добро пожаловать на тестовую страницу</h1>
+<p id="text">Этот текст изменится, если нажать на кнопку ниже.</p>
+<button onclick="changeColor()">Изменить цвет текста</button>
+
+<script>
+  function changeColor() {
+    document.getElementById("text").style.color = '#ff4500';
+  }
+</script>
+</body>
+</html>
